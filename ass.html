@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #88A3E3;">
+    <div id="display">
+        </div>
+        <script>
+            let get = document.getElementById(`display`)
+
+            for (let i = 99; i >= 1; i--){
+                get.innerHTML += `<p style="color: blue; text-align: center;">${i} bottles of beer on the wall, ${i} bottles of beer. Take one down and pass it around, ${i - 1} bottles of beer on the wall.</p>`
+            } 
+            get.innerHTML += `<p style="color: blue; text-align: center;">No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.</p>`
+        </script>
+</body>
+</html>
